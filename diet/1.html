@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Diet Plan - Great Home Workouts</title>
+		<style>
+			*{padding:0; margin:0; font-family:calibri;}
+			#wrapper, #titlebar{min-width:65em;}
+			#titlebar{
+				position:absolute;
+				width:100%;
+				top:0px;
+				left:0px;
+				z-index:1;
+				background-color:rgb(40,40,40);
+				height:4em;
+			}
+			#titlebar img{
+				height:4em;
+				margin-left:4em;
+				margin-right:4em;
+			}
+			.links{
+				
+				display:inline-block;
+				height:3.8em;
+				width:auto;
+				margin-right:1em;
+				padding-left:0.5em;
+				padding-right:0.5em;
+				color:white;
+				vertical-align:top;
+			}
+			.links p{
+				font-size:1.5em;
+				font-weight:bold;
+				line-height:2.5em;
+			}
+			.links:hover{
+				cursor:pointer;
+				border-bottom:0.2em solid rgb(0,162,232);
+			}
+			#slideshow{
+				background-color:black;
+				margin-top:4em;
+				width:80%;
+				height:21em;
+				padding-right:10%;
+				padding-left:10%;
+			}
+			#wss{
+				display:block;
+				height:100%;
+				width:100%;
+				opacity:0;
+				transition: opacity 1.0s linear 0s;
+				-webkit-transition: opacity 0.7s linear 0s;
+			}
+			#wss img{width:100%; height:100%;}
+			
+			#menu_options_1{
+			
+				width:100%;
+				display:none;
+				z-index:3;
+				width:auto;
+				overflow:hidden;
+				height:21em;
+				background-color:silver;
+				
+			}
+			#menu_options_2{
+				width:100%;
+				display:none;
+				z-index:4;
+				
+				height:21em;
+				background-color:silver;
+			}
+			#slideshow ul{
+			padding:3em;
+			list-style:none;
+			}
+			#slideshow li{
+			padding:1em;
+			font-weight:bold;
+			font-size:1.2em;
+			}
+			#slideshow a:hover{
+			cursor:pointer;
+			color:white;
+			}
+			#mainbody{
+				padding:5em;
+				font-size:1.1em;
+			}
+			#mainbody p{
+				padding-bottom:1em;
+			}
+			
+			#mainbody img{
+				float:right;
+				margin:1em;
+			}
+			#mainbody ul{
+				margin-left:2em;
+			}
+			footer{
+			background-color:black;
+			color:white;
+			text-align:center;
+			font-size:1.2em;
+			padding:1.5em;
+			margin-top:5em;
+			}
+			#note{color:gray; font-size:0.9em;}
+			#slideshow a{
+				color:black;
+				text-decoration:none;
+			}
+			#titlebar a{
+			color:white;
+			text-decoration:none;}
+		</style>
+			
+		
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div id="titlebar">
+			<img src="LOGO.jpg" alt="">
+			<div class="links" id="link1"><p id="link1_text"><a href="../index.html">Home</a></p></div>
+			<div class="links" id="link2"><p id="link2_text"><a href="../about.html">About</a></p></div>
+			<div class="links" id="link3" onclick="options1function()"><p id="link3_text">Workouts</p></div>
+			<div class="links" id="link4" onclick="options2function()"><p id="link4_text">Diets</p></div>
+		</div>
+		
+		<div id="slideshow">
+			<div id="menu_options_1">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../workout/1.html">Chest Workouts</a></li>
+					<li><a href="../workout/2.html">Back Workouts</a></li>
+					<li><a href="../workout/3.html">Shoulder Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../workout/4.html">Core Workouts</a></li>
+					<li><a href="../workout/5.html">Biceps Workouts</a></li>
+					<li><a href="../workout/6.html">Triceps Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../workout/7.html">Leg Workouts</a></li>
+					<li><a href="../workout/8.html">Flexibility Workouts</a></li>
+					<li><a href="../workout/9.html">Explosive Strength Workouts</a></li>
+				</ul>
+			</div>
+			<div id="menu_options_2">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="1.html">Diet Plans</a></li>
+					<li><a href="2.html">Meal Prep</a></li>
+					<li><a href="3.html">Supplementation</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="4.html">Home made protien bars</a></li>
+					<li><a href="5.html">Best Pre and Post Workout foods</a></li>
+					<li><a href="6.html">Calculators</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="7.html">Diet tips for women</a></li>
+					<li><a href="8.html">Diet tips for men</a></li>
+					<li><a href="9.html">Diet tips for seniors</a></li>
+				</ul>
+			</div>
+			<div id="wss"></div>
+			
+		</div>
+		
+		<div id="sidebar">
+		</div>
+		
+		<div id="mainbody">
+			
+			<h1>You really need to EAT</h1><br>
+			<p>
+			If you want to get big and grow muscle, you really need to EAT. And we’re not talking protein shakes and snacks between meals – we’re talking 5+ meals a day, six eggs for breakfast, shakes containing 1200+ kcals apiece. If you’re a hard gainer looking to bulk up, you need to be prepared to eat. A LOT. We can’t stress that enough.</p>
+
+
+
+<p>We often hear people lamenting: “no matter what I eat, the weight just doesn’t go on.” But when we get down to the nitty gritty, their diet usually looks something like this…
+<br>
+- Breakfast: Two scoops of protein with milk<br>
+- Lunch: A couple of sandwiches<br>
+- Evening meal: Pizza or some kind of junk food<br>
+</p>
+<p>To some people, this may seem like a lot of food. In actual fact, it probably wouldn’t even equate to 2000 calories.</p>
+
+<p>If you want to get big, you need to eat big. And assuming you want to put on muscle rather than fat, this will require a far subtler plan of attack than simply cramming in as much junk food as possible.</p>
+
+<p>You need to take in the right amounts of proteins and amino acids to help repair and rebuild your muscles. You need a mixture of fast and slow releasing carbohydrates to provide valuable energy for the gym. And last but not least, you need plenty of healthy, decent-quality, calorie-rich fats.</p>
+
+
+<p>Some people will find this easier than others. If you enjoy cooking and preparing your own food, you’re likely to be well accustomed to cooking meals that combine these vital food groups. If you’re more of a southern fried chicken and oven chips kind of person, you might need to spend some time devising a simple meal plan that will provide you with the calories and nutrients you need.</p>
+
+<p>It’s important that you plan ahead so that you know exactly what you need to eat throughout the day in order to get the amount of calories you need. You'll probably find it helpful to cook meals in bulk to save yourself time over the course of the week.</p>
+
+<p><h3>How many calories do you need to consume?</h3><br>
+The best way to begin is by working out how many calories your body needs to maintain its existing weight and muscle mass. Use the Harris-Benedict equation to work out your basal metabolic rate (BMR - how many calories your body burns at rest):
+<br>
+Men: BMR= 66+(13.7xweight in kg)+ (5xheight in cm)-(6.8 x age in years)<br>
+Or approximately 11 calories per pound of body weight<br>
+
+Women: BMR = 655 + (9.6 X wt in kg) + (1.8 X ht in cm) - (4.7 X age in years)<br>
+Or approximately 10 calories per pound of body weight<br>
+<br>
+So if you were a 31 year old, 180cm tall man weighing in at 95kg, the calculation would be as follows:<br> 66+(13.7x95)+(5x180)-(6.8 x31)</p>
+
+<p>
+In other words, you would need to consume 2056.7 Kcals a day to maintain your existing weight – but that’s without taking physical activity into account. Use these rough ballparks to get a more complete picture of the number of calories you burn in a day:
+<br>
+Sedentary BMR x 1.2<br>
+Very Light Exercise BMR x 1.375<br>
+Moderate Exercise BMR x 1.55<br>
+Heavy Exercise Daily BMR x 1.725<br>
+Extremely Heavy Exercise BMR x 1.9<br>
+So if the man in our example above (let’s call him Jim) were to exercise heavily on a daily basis, we would multiply his BMR (2056.7) by 1.725 and arrive at a figure of 3547.8. That’s the number of calories he would have to consume on a daily basis just to maintain his existing weight.</p>
+
+
+
+<p>That’s a lot of calories. These numbers might come as a shock to those “hardgainers” who thought they were eating a lot, when in actual fact they may not have been eating enough to maintain their existing weight.</p>
+
+<p>And remember that if you want to gain weight, you will need to consume at least an extra 500 calories a day on top of this figure. In Jim's case, that would bring his recommended daily caloric intake up to a whopping 4047.8 Kcals.</p>
+
+<p>That equates to a huge amount of food. Unless you want to end up feeling sick, bloated and lethargic, you will need to be extremely careful about the kinds of food you eat. Filling up on cheap burgers and fizzy drinks isn’t going to cut it: you're going to have to stock up on good quality foods that are rich in proteins and good fats, such as steak, eggs, chicken, oats, nuts, seeds and avocados.</p>
+
+<p><h3>Example meal plan for a hard gainer</h3>
+Jim’s ideal meal plan might look something like this…<br>
+
+<h3>Meal One: Breakfast</h3>
+6 whole eggs, scrambled  – 36gp/3gc/30gf/426 Kcal<br>
+25g whey shake – 25gp/2gc/2gf/126 Kcal<br>
+100g oats – 9gp/70gc/7gf/379 Kcal<br>
+Total: 70gp/75gc/39gf/931Kcal<br>
+ 
+<h3>Meal Two: Mid-Morning 'Snack'</h3>
+200g cooked chicken – 45gp/0gc/2.5gf/202.5 Kcal<br>
+250g sweet potato – 5gp/51gc/0.5gf/228 Kcal<br>
+Large banana – 1gp/28gc/0gf/116 Kcal<br>
+Total: 51gp/79gc/3gf/546.5 Kcal<br>
+<br>
+<h3>Meal Three: Lunch</h3>
+250g tinned tuna – 58gp/0gc/2gf/250 Kcal<br>
+200g quinoa – 9gp/37gc/3.5gf/215.5 Kcal<br>
+Total: 67gp/37gc/5.5gf/465.5 Kcal<br>
+<br>
+<h3>Meal Four: Pre-Workout Meal</h3>
+200g cooked chicken – 45gp/0gc/2.5gf/202.5 Kcal<br>
+250g sweet potato –5gp/51gc/0.5gf/228 Kcal<br>
+Large banana – 1gp/28gc/0gf/116 Kcal<br>
+Total: 51gp/78gc/3gf/546.5 Kcal<br>
+<br>
+<h3>Post-Workout Shake</h3>
+50g whey protein<br>
+Total: 50gp/48gc/0gf/392 Kcal<br>
+<br>
+<h3>Meal Five: Evening Meal</h3>
+200g steak – 45gp/0gc/9gf/261 Kcal<br>
+250g sweet potato –5gp/51gc/0.5gf/228 Kcal<br>
+100g avocado-1.9gp/1.9gc/39gf/366.2 Kcal<br>
+Total: 51.9gp/52.9gc/48.5gf/855.2 Kcal<br>
+<br>
+<h3>Meal Six: Light Supper</h3>
+300g Low Fat Cottage cheese – 33gp/9gc/18gf/330 Kcal<br>
+30g Natural peanut butter-9gp/4gc/14gf/178 Kcal<br>
+Total-42gp/13gc/32gf/508 Kcal<br>
+<br>
+Calories = 4244.7<br>
+Protein = 382.9<br>
+Carbohydrates = 378.5<br>
+Fats = 131g<br>
+</p>
+
+<p>So there you have it: if you want to bulk up, you have to eat a LOT of calories. Of course, the above meal plan is intended purely to demonstrate Jim’s caloric requirements, so you’ll need to adjust the above macros to suit your BMR and calorie needs.</p>
+
+<p>You should also add in some fruit, veg, nuts, seeds and other such foods to contribute towards your daily vitamin, mineral and antioxidant requirements. You might wish to top up with a superfood supplement to support and optimise your body’s natural muscle building and repair processes.</p>
+
+
+
+<p>And it should go without saying that you’ll need to adapt the plan to suit your personal taste and change it up from one day to the next to prevent yourself from getting bored. Few of us can eat peanut butter and cottage cheese every night without eventually coming to baulk at the mere thought of it. Moreover, consuming a good selection of nutrients will go a long way towards supporting you in reaching your weight and physique goals.</p>
+
+<p>Remember that you can add sauces and condiments to your meals to make them more palatable but you’ll need to factor in those calories too. If you need to bump up your calorie intake don’t be afraid to use full fat products or add some good oils into your favourite dishes.</p>
+
+<p>You could also incorporate healthy high-calorie ingredients such as oily fish, liver, avocados, coconut milk, quinoa, chickpeas, nuts, seeds or dried fruit, or add a scoop of whey to each meal.</p>
+
+
+
+<p>Keep an eye on your weight and if you find that you're piling on the pounds too quickly, reduce your calorie intake a little. If after a few weeks you are still not gaining weight, up the calories by increasing portion sizes or factoring an extra weight gain shake into your day.</p>
+
+<p>Other things to bear in mind when trying to gain weight
+Calorie content of each major food group:
+<br>
+1g protein = 4 calories<br>
+1g carbohydrates = 4 calories<br>
+1g fat = 9 calories</p>
+
+<p>Sustainable weight gain<br>
+<br>
+Remember that you cannot gain 10lbs of lean muscle in one month - it’s simply not possible - so the weight gain you see on the scales will most likely be a combination of muscle, fat and water. If you’re doing the right kind of exercise and eating healthily, realistically you can hope to gain around 1-2lb of muscle per month, with the rest being a mixture of glycogen and fat.</p>
+
+<p>Supplementing your diet
+<br><br>
+Even if you love your food, it can be difficult to consume enough calories through your diet alone and it certainly isn’t cheap. If you find that you are physically unable to eat that much due to your lifestyle, your appetite, your finances or some other factor, be sure to invest in a good quality weight gainer.</p>
+
+<p>Recap<br><br>
+If you want to get big, you need to eat big.
+Use the Harris-Benedict equation to calculate your basal metabolic rate.
+Work out how many calories you need to consume to maintain your existing weight by adding your level of physical activity into the equation.
+Consume at least 500 calories on top of that each day to ensure consistent weight gain.
+Don’t fill up on junk food: eat a balanced diet with plenty of protein, healthy fats, vitamins, minerals and antioxidants to ensure that you stay healthy and build muscle, not fat.
+Use a weight gain product to supplement your calorie intake.
+Now that your diet and supplement regime are in check, see our training template for the hard gainer to learn how to make the most of those surplus calories and build some serious mass!
+<br><br>
+(Taken from predatornutrition.com)
+</p>
+		
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+	<footer>
+			<p>&copy; 2018 Great Home Workouts. All rights reserved.</p>
+			<p id="note">This website is not intended to provide medical advice, diagnosis or prescription.</p>
+		</footer>
+	
+	<script>
+			function options1function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="block";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			
+			
+			function options2function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="block";
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('#link4_text') && !e.target.matches('#link3_text')){
+				
+					document.getElementById("wss").style.display="block";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			}
+				
+				
+			
+					
+		
+		</script>
+	
+	<script>
+		var wss_i=0;
+		var wss_array=['<img src="img/sl1.jpg" alt="">','<img src="img/sl2.jpg" alt="">','<img src="img/sl3.jpg" alt="">'];
+		var wss_elem=document.getElementById("wss");
+		
+		function wssSlide(){
+			wss_elem.innerHTML=wss_array[wss_i];
+			wss_elem.style.opacity=1;
+			setTimeout('wssNext()', 3500);
+		}
+		
+		function wssNext(){
+			wss_elem.style.opacity=0;
+			wss_i++;
+			if(wss_i>(wss_array.length-1)){
+				wss_i=0;
+			}
+			setTimeout('wssSlide()',750);
+		}
+		
+		wssSlide();
+	</script>
+	</body>
+
+</html>

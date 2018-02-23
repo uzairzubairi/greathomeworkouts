@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Great Home Workouts</title>
+		<style>
+			*{padding:0; margin:0; font-family:calibri;}
+			#wrapper, #titlebar{min-width:65em;}
+			#titlebar{
+				position:absolute;
+				width:100%;
+				top:0px;
+				left:0px;
+				z-index:1;
+				background-color:rgb(40,40,40);
+				height:4em;
+			}
+			#titlebar img{
+				height:4em;
+				margin-left:4em;
+				margin-right:4em;
+			}
+			.links{
+				
+				display:inline-block;
+				height:3.8em;
+				width:auto;
+				margin-right:1em;
+				padding-left:0.5em;
+				padding-right:0.5em;
+				color:white;
+				vertical-align:top;
+			}
+			.links p{
+				font-size:1.5em;
+				font-weight:bold;
+				line-height:2.5em;
+			}
+			.links:hover{
+				cursor:pointer;
+				border-bottom:0.2em solid rgb(0,162,232);
+			}
+			#slideshow{
+				background-color:black;
+				margin-top:4em;
+				width:80%;
+				height:21em;
+				padding-right:10%;
+				padding-left:10%;
+			}
+			#wss{
+				display:block;
+				height:100%;
+				width:100%;
+				opacity:0;
+				transition: opacity 1.0s linear 0s;
+				-webkit-transition: opacity 0.7s linear 0s;
+			}
+			#wss img{width:100%; height:100%;}
+			
+			#menu_options_1{
+			
+				width:100%;
+				display:none;
+				z-index:3;
+				width:auto;
+				overflow:hidden;
+				height:21em;
+				background-color:silver;
+				
+			}
+			#menu_options_2{
+				width:100%;
+				display:none;
+				z-index:4;
+				
+				height:21em;
+				background-color:silver;
+			}
+			#slideshow ul{
+			padding:3em;
+			list-style:none;
+			}
+			#slideshow li{
+			padding:1em;
+			font-weight:bold;
+			font-size:1.2em;
+			}
+			#slideshow a:hover{
+			cursor:pointer;
+			color:white;
+			}
+			#mainbody{
+				padding:5em;
+				font-size:1.1em;
+			}
+			#mainbody p{
+				padding-bottom:1em;
+			}
+			
+			#mainbody img{
+				float:right;
+				margin:1em;
+			}
+			#mainbody ul{
+				margin-left:2em;
+			}
+			footer{
+			background-color:black;
+			color:white;
+			text-align:center;
+			font-size:1.2em;
+			padding:1.5em;
+			margin-top:5em;
+			}
+			#note{color:gray; font-size:0.9em;}
+			a{
+				color:black;
+				text-decoration:none;
+			}
+		</style>
+			
+		
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div id="titlebar">
+			<img src="LOGO.jpg" alt="">
+			<div class="links" id="link1"><p id="link1_text">Home</p></div>
+			<div class="links" id="link2"><p id="link2_text">About</p></div>
+			<div class="links" id="link3" onclick="options1function()"><p id="link3_text">Workouts</p></div>
+			<div class="links" id="link4" onclick="options2function()"><p id="link4_text">Diets</p></div>
+		</div>
+		
+		<div id="slideshow">
+			<div id="menu_options_1">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="workout/1.html">Chest Workouts</a></li>
+					<li><a href="workout/2.html">Back Workouts</a></li>
+					<li><a href="workout/3.html">Shoulder Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="workout/4.html">Core Workouts</a></li>
+					<li><a href="workout/5.html">Biceps Workouts</a></li>
+					<li><a href="workout/6.html">Triceps Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="workout/7.html">Leg Workouts</a></li>
+					<li><a href="workout/8.html">Flexibility Workouts</a></li>
+					<li><a href="workout/9.html">Explosive Strength Workouts</a></li>
+				</ul>
+			</div>
+			<div id="menu_options_2">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="diet/1.html">Diet Plans</a></li>
+					<li><a href="diet/2.html">Meal Prep</a></li>
+					<li><a href="diet/3.html">Supplementation</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="diet/4.html">Home made protien bars</a></li>
+					<li><a href="diet/5.html">Best Pre and Post Workout foods</a></li>
+					<li><a href="diet/6.html">Calculators</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="diet/7.html">Diet tips for women</a></li>
+					<li><a href="diet/8.html">Diet tips for men</a></li>
+					<li><a href="diet/9.html">Diet tips for seniors</a></li>
+				</ul>
+			</div>
+			<div id="wss"></div>
+			
+		</div>
+		
+		<div id="sidebar">
+		</div>
+		
+		<div id="mainbody">
+			
+			<h1>Why you should exercise more often</h1><br>
+			<p>You keep your skin clean. You condition your hair. You're eating right. You're doing all you can to look and feel great. But are you missing out on an important part of a healthier lifestyle?</p>
+<img src="img/ex_ben_1.jpg" alt="">
+<p>No matter what your age or shape, you should exercise daily. Not only does exercise tone your body so you can wear your favorite jeans, it strengthens your muscles, keeps your bones strong, and improves your skin. And there are more benefits of exercise -- increased relaxation, better sleep and mood, strong immune function, and more. Let's look at some of the incredible benefits of exercise then talk about how you can get started.</p>
+
+<p>Exercise and Your Weight
+Because exercise helps use up oxygen, it causes your body to burn stored fat and helps you maintain a normal weight. For instance, if you walk 4 miles a day four times a week, you can burn about 1,600 calories or nearly half a pound a week. If you don't change your diet at all and keep walking the same distance over six months, you'll lose 12 pounds. Walk the same distance for a year and you'll drop 24 pounds.</p>
+
+<p>The neat thing about exercise is you don't have to do it all at one time. After all, not many teens have time to walk 4 miles after school. But you can do 4 miles in short bursts throughout your day. Here's an idea of how to work that much exercise into your daily routine:</p>
+
+<p>Take a 1-mile walk on a treadmill before school. Then, take a 1-mile walk around the track during school lunch period.
+Take a 1-mile walk after school with friends or the family dog.
+Take a 1-mile walk on the treadmill while watching your favorite show before dinner.
+If you stay with the walking program, you'll see benefits with:</p>
+<img src="img/ex_ben_2.jpg" alt="" width="20%">
+<ul>
+<li>Weight loss</li>
+<li>Muscle strengthening and definition</li>
+<li>Stronger bones</li>
+<li>A lower heart rate</li>
+<li>Better mood</li>
+<li>An improved complexion</li>
+</ul>
+<br>
+<p>Most people know that exercise keeps muscles strong. But did you know that strong muscles burn more calories? Muscle mass is metabolically active tissue. In other words, the more muscle mass you have, the more calories you burn even when you're not working out.</p>
+
+<p>Studies estimate that for each pound of muscle you add to your body, you will burn an additional 35-50 calories per day. So an extra 5 pounds of muscle will burn about 175-250 calories a day -- or an extra pound of fat every 14-20 days.</p>
+<img src="img/ex_ben_3.jpg" alt="" width="20%">
+<p>Research shows that regular exercise reduces symptoms of moderate depression and enhances psychological fitness. Exercise can even produce changes in certain chemical levels in the body, which can have an effect on the psychological state.</p>
+
+<p>Endorphins are hormones in the brain associated with a happy, positive feeling. A low level of endorphins is associated with depression. During exercise, plasma levels of this substance increase. This may help to ease symptoms of depression. A recent National Health and Nutrition survey found that physically active people were half as likely to be depressed.</p>
+
+<p>Exercise also boosts the neurotransmitter serotonin in the brain. Neurotransmitters are chemicals that send specific messages from one brain cell to another. Though only a small percentage of all serotonin is located in the brain, this neurotransmitter is thought to play a key role in keeping your mood calm.</p>
+
+<p>Regular exercise appears to help jump-start the immune system, thus helping to reduce the number of colds, flu, and other viruses.</p>
+
+<p>Keep in mind, however, that too much exercise can have the opposite effect; it can weaken your immunity to colds and other viruses and can lead to injury. Joint or muscle pain may be a sign. If you're doing intense workouts every day, consider alternating them with walking and upper-body lifting.</p>
+
+<p>The more intense the training session, the more heat your body will produce. Before beginning exercise, drink water to help the body compensate for sweating. You can drink more water during exercise if you're thirsty.</p>
+
+<p>The benefits of daily exercise are incredible, and they are free! Start a daily exercise regimen today, and enjoy all the proven "extras" that come with moving around more.</p>
+
+
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+	<footer>
+			<p>&copy; 2018 Great Home Workouts. All rights reserved.</p>
+			<p id="note">This website is not intended to provide medical advice, diagnosis or prescription.</p>
+		</footer>
+	
+	<script>
+			function options1function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="block";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			
+			
+			function options2function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="block";
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('#link4_text') && !e.target.matches('#link3_text')){
+				
+					document.getElementById("wss").style.display="block";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			}
+				
+				
+			
+					
+		
+		</script>
+	
+	<script>
+		var wss_i=0;
+		var wss_array=['<img src="img/sl1.jpg" alt="">','<img src="img/sl2.jpg" alt="">','<img src="img/sl3.jpg" alt="">'];
+		var wss_elem=document.getElementById("wss");
+		
+		function wssSlide(){
+			wss_elem.innerHTML=wss_array[wss_i];
+			wss_elem.style.opacity=1;
+			setTimeout('wssNext()', 3500);
+		}
+		
+		function wssNext(){
+			wss_elem.style.opacity=0;
+			wss_i++;
+			if(wss_i>(wss_array.length-1)){
+				wss_i=0;
+			}
+			setTimeout('wssSlide()',750);
+		}
+		
+		wssSlide();
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Diet Plan - Great Home Workouts</title>
+		<style>
+			*{padding:0; margin:0; font-family:calibri;}
+			#wrapper, #titlebar{min-width:65em;}
+			#titlebar{
+				position:absolute;
+				width:100%;
+				top:0px;
+				left:0px;
+				z-index:1;
+				background-color:rgb(40,40,40);
+				height:4em;
+			}
+			#titlebar img{
+				height:4em;
+				margin-left:4em;
+				margin-right:4em;
+			}
+			.links{
+				
+				display:inline-block;
+				height:3.8em;
+				width:auto;
+				margin-right:1em;
+				padding-left:0.5em;
+				padding-right:0.5em;
+				color:white;
+				vertical-align:top;
+			}
+			.links p{
+				font-size:1.5em;
+				font-weight:bold;
+				line-height:2.5em;
+			}
+			.links:hover{
+				cursor:pointer;
+				border-bottom:0.2em solid rgb(0,162,232);
+			}
+			#slideshow{
+				background-color:black;
+				margin-top:4em;
+				width:80%;
+				height:21em;
+				padding-right:10%;
+				padding-left:10%;
+			}
+			#wss{
+				display:block;
+				height:100%;
+				width:100%;
+				opacity:0;
+				transition: opacity 1.0s linear 0s;
+				-webkit-transition: opacity 0.7s linear 0s;
+			}
+			#wss img{width:100%; height:100%;}
+			
+			#menu_options_1{
+			
+				width:100%;
+				display:none;
+				z-index:3;
+				width:auto;
+				overflow:hidden;
+				height:21em;
+				background-color:silver;
+				
+			}
+			#menu_options_2{
+				width:100%;
+				display:none;
+				z-index:4;
+				
+				height:21em;
+				background-color:silver;
+			}
+			#slideshow ul{
+			padding:3em;
+			list-style:none;
+			}
+			#slideshow li{
+			padding:1em;
+			font-weight:bold;
+			font-size:1.2em;
+			}
+			#slideshow a:hover{
+			cursor:pointer;
+			color:white;
+			}
+			#mainbody{
+				padding:5em;
+				font-size:1.1em;
+			}
+			#mainbody p{
+				padding-bottom:1em;
+			}
+			
+			#mainbody img{
+				float:right;
+				margin:1em;
+			}
+			#mainbody ul{
+				margin-left:2em;
+			}
+			footer{
+			background-color:black;
+			color:white;
+			text-align:center;
+			font-size:1.2em;
+			padding:1.5em;
+			margin-top:5em;
+			}
+			#note{color:gray; font-size:0.9em;}
+			#slideshow a{
+				color:black;
+				text-decoration:none;
+			}
+			#titlebar a{
+			color:white;
+			text-decoration:none;}
+		</style>
+			
+		
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div id="titlebar">
+			<img src="LOGO.jpg" alt="">
+			<div class="links" id="link1"><p id="link1_text"><a href="../index.html">Home</a></p></div>
+			<div class="links" id="link2"><p id="link2_text"><a href="../about.html">About</a></p></div>
+			<div class="links" id="link3" onclick="options1function()"><p id="link3_text">Workouts</p></div>
+			<div class="links" id="link4" onclick="options2function()"><p id="link4_text">Diets</p></div>
+		</div>
+		
+		<div id="slideshow">
+			<div id="menu_options_1">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../workout/1.html">Chest Workouts</a></li>
+					<li><a href="../workout/2.html">Back Workouts</a></li>
+					<li><a href="../workout/3.html">Shoulder Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../workout/4.html">Core Workouts</a></li>
+					<li><a href="../workout/5.html">Biceps Workouts</a></li>
+					<li><a href="../workout/6.html">Triceps Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../workout/7.html">Leg Workouts</a></li>
+					<li><a href="../workout/8.html">Flexibility Workouts</a></li>
+					<li><a href="../workout/9.html">Explosive Strength Workouts</a></li>
+				</ul>
+			</div>
+			<div id="menu_options_2">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="1.html">Diet Plans</a></li>
+					<li><a href="2.html">Meal Prep</a></li>
+					<li><a href="3.html">Supplementation</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="4.html">Home made protien bars</a></li>
+					<li><a href="5.html">Best Pre and Post Workout foods</a></li>
+					<li><a href="6.html">Calculators</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="7.html">Diet tips for women</a></li>
+					<li><a href="8.html">Diet tips for men</a></li>
+					<li><a href="9.html">Diet tips for seniors</a></li>
+				</ul>
+			</div>
+			<div id="wss"></div>
+			
+		</div>
+		
+		<div id="sidebar">
+		</div>
+		
+		<div id="mainbody">
+			<p>
+			Who needs to buy supplements when you can easily make them at home yourself? Heres how you can make your own delicious protien bars in about 20mins.<br><br>
+			
+			<h3>INGREDIENTS</h3>
+1⁄2 cup skim milk<br>
+1 cup natural-style peanut butter or 1 cup low-fat peanut butter<br>
+1 tablespoon honey<br>
+1 1⁄4-1 1⁄2 cups of whey protein powder (I use vanilla, but I'm sure chocolate would work too)<br>
+2 cups dry uncooked oatmeal (not quick cooking kind)<br>
+		</p>
+		<br>
+		<p>
+		<h3>DIRECTIONS</h3>
+		Combine PB, honey and milk in a pot.<br>
+Warm over low heat.<br>
+Add the protein powder and mix well.<br>
+Add the oats.<br>
+You don't want to cook it, just warm it through so you can stir it.<br>
+Add more milk if it is too thick to stir.<br>
+Press in a 9" x 13" pan.<br>
+Let the bars sit until cool, and cut into 16 equal sized bars.<br>
+Wrap each bar in foil or Saran wrap and store in plastic baggies.<br>
+		</p>
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+	<footer>
+			<p>&copy; 2018 Great Home Workouts. All rights reserved.</p>
+			<p id="note">This website is not intended to provide medical advice, diagnosis or prescription.</p>
+		</footer>
+	
+	<script>
+			function options1function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="block";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			
+			
+			function options2function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="block";
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('#link4_text') && !e.target.matches('#link3_text')){
+				
+					document.getElementById("wss").style.display="block";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			}
+				
+				
+			
+					
+		
+		</script>
+	
+	<script>
+		var wss_i=0;
+		var wss_array=['<img src="img/sl1.jpg" alt="">','<img src="img/sl2.jpg" alt="">','<img src="img/sl3.jpg" alt="">'];
+		var wss_elem=document.getElementById("wss");
+		
+		function wssSlide(){
+			wss_elem.innerHTML=wss_array[wss_i];
+			wss_elem.style.opacity=1;
+			setTimeout('wssNext()', 3500);
+		}
+		
+		function wssNext(){
+			wss_elem.style.opacity=0;
+			wss_i++;
+			if(wss_i>(wss_array.length-1)){
+				wss_i=0;
+			}
+			setTimeout('wssSlide()',750);
+		}
+		
+		wssSlide();
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Bicep Workouts - Great Home Workouts</title>
+		<style>
+			*{padding:0; margin:0; font-family:calibri;}
+			#wrapper, #titlebar{min-width:65em;}
+			#titlebar{
+				position:absolute;
+				width:100%;
+				top:0px;
+				left:0px;
+				z-index:1;
+				background-color:rgb(40,40,40);
+				height:4em;
+			}
+			#titlebar img{
+				height:4em;
+				margin-left:4em;
+				margin-right:4em;
+			}
+			.links{
+				
+				display:inline-block;
+				height:3.8em;
+				width:auto;
+				margin-right:1em;
+				padding-left:0.5em;
+				padding-right:0.5em;
+				color:white;
+				vertical-align:top;
+			}
+			.links p{
+				font-size:1.5em;
+				font-weight:bold;
+				line-height:2.5em;
+			}
+			.links:hover{
+				cursor:pointer;
+				border-bottom:0.2em solid rgb(0,162,232);
+			}
+			#slideshow{
+				background-color:black;
+				margin-top:4em;
+				width:80%;
+				height:21em;
+				padding-right:10%;
+				padding-left:10%;
+			}
+			#wss{
+				display:block;
+				height:100%;
+				width:100%;
+				opacity:0;
+				transition: opacity 1.0s linear 0s;
+				-webkit-transition: opacity 0.7s linear 0s;
+			}
+			#wss img{width:100%; height:100%;}
+			
+			#menu_options_1{
+			
+				width:100%;
+				display:none;
+				z-index:3;
+				width:auto;
+				overflow:hidden;
+				height:21em;
+				background-color:silver;
+				
+			}
+			#menu_options_2{
+				width:100%;
+				display:none;
+				z-index:4;
+				
+				height:21em;
+				background-color:silver;
+			}
+			#slideshow ul{
+			padding:3em;
+			list-style:none;
+			}
+			#slideshow li{
+			padding:1em;
+			font-weight:bold;
+			font-size:1.2em;
+			}
+			#slideshow a:hover{
+			cursor:pointer;
+			color:white;
+			}
+			#mainbody{
+				padding:5em;
+				font-size:1.1em;
+			}
+			#mainbody p{
+				padding-bottom:1em;
+			}
+			
+			#mainbody img{
+				float:right;
+				margin:1em;
+			}
+			#mainbody ul{
+				margin-left:2em;
+			}
+			footer{
+			background-color:black;
+			color:white;
+			text-align:center;
+			font-size:1.2em;
+			padding:1.5em;
+			margin-top:5em;
+			}
+			#note{color:gray; font-size:0.9em;}
+			#slideshow a{
+				color:black;
+				text-decoration:none;
+			}
+			#titlebar a{
+			color:white;
+			text-decoration:none;}
+		</style>
+			
+		
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div id="titlebar">
+			<img src="LOGO.jpg" alt="">
+			<div class="links" id="link1"><p id="link1_text"><a href="../index.html">Home</a></p></div>
+			<div class="links" id="link2"><p id="link2_text"><a href="../about.html">About</a></p></div>
+			<div class="links" id="link3" onclick="options1function()"><p id="link3_text">Workouts</p></div>
+			<div class="links" id="link4" onclick="options2function()"><p id="link4_text">Diets</p></div>
+		</div>
+		
+		<div id="slideshow">
+			<div id="menu_options_1">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="1.html">Chest Workouts</a></li>
+					<li><a href="2.html">Back Workouts</a></li>
+					<li><a href="3.html">Shoulder Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="4.html">Core Workouts</a></li>
+					<li><a href="5.html">Biceps Workouts</a></li>
+					<li><a href="6.html">Triceps Workouts</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="7.html">Leg Workouts</a></li>
+					<li><a href="8.html">Flexibility Workouts</a></li>
+					<li><a href="9.html">Explosive Strength Workouts</a></li>
+				</ul>
+			</div>
+			<div id="menu_options_2">
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../diet/1.html">Diet Plans</a></li>
+					<li><a href="../diet/2.html">Meal Prep</a></li>
+					<li><a href="../diet/3.html">Supplementation</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../diet/4.html">Home made protien bars</a></li>
+					<li><a href="../diet/5.html">Best Pre and Post Workout foods</a></li>
+					<li><a href="../diet/6.html">Calculators</a></li>
+				</ul>
+				<ul style="float:left; display:inline-block;">
+					<li><a href="../diet/7.html">Diet tips for women</a></li>
+					<li><a href="../diet/8.html">Diet tips for men</a></li>
+					<li><a href="../diet/9.html">Diet tips for seniors</a></li>
+				</ul>
+			</div>
+			<div id="wss"></div>
+			
+		</div>
+		
+		<div id="sidebar">
+		</div>
+		
+		<div id="mainbody">
+		
+
+
+<h1>Pull-Ups - Your weapon in the bicep growth battle</h1>
+
+<p>Instructions: Hold onto a pull-up bar with a shoulder-width grip and your palms facing you. Squeeze your shoulder blades together and drive your elbows down, pulling your chest towards the bar. Pause at the top for one second.  Lower yourself under control for a four count. Repeat for four sets of six to eight reps, resting 90 seconds between sets.</p>
+<img src="img/pullup.jpg" alt="" width="50%">
+
+<h3>Types of pullups</h3>
+<p>There are two main types of pullups. "There's the bodybuilding style, where your lower back is rounded and your knees are bent , and the tactical style pullup—often used in the military and by gymnasts—where your legs are kept straight and slightly in front of your body as the pullup is completed," says Marc Perry, CSCS, CPT, and founder of BuiltLean, who personally recommends the tactical style pullup. "It keeps your core engaged to help protect your lower back and maximizes full-body tension."</p>
+
+<h3>The muscles they work</h3>
+<p>Pullups are a vertical pulling motion, so for the most part, you're using the same muscles no matter the variation. The main difference you'll find among these 15 pullups is in the intensity of the muscle contraction, and which muscles are being targeted. For example, a wide-grip pullup will emphasize the outer portion of your back more than a close-grip pullup, which emphasizes the middle of your back. Interspersing these variations in your workouts will build your lats, mid-back, rear delts, biceps, forearms, and core—and by recruiting different muscles, you'll avoid overuse injuries, too.</p>
+
+<h3>How to choose the right grip </h3>
+<p>A pronated, or overhand, grip is more difficult than a supinated, or underhand, grip because your biceps are in a less-advantageous position to generate maximal force. This small difference is why underhand is generally easier than overhand (but not by much). For a neutral grip, your hands are facing each other sideways instead of forward or backward, which is in between the difficulty of a pullup and chinup, but may vary from person to person. </p>
+
+<h3>How to incorporate</h3>
+<p>“There are many different ways to infuse pullups into a workout routine and many different schools of thought as to how to get stronger, and more efficient at them,” Perry says. Simply put, the more you do pullups, the stronger you’ll get. So if your goal is to get really good at pullups, then do them nearly every day.</p>  
+
+<h3>How to maximize your goals</h3>
+<p>If your goal is to maximize strength, complete several sets without going to failure. This will help condition your nervous system to get stronger faster than it could by constantly going to failure. If you can max out at 10 reps, doing 5 sets of 7 reps (35 reps total) is better than 3 sets of 9 (27 reps total). If you're shooting for maximum muscle growth, training several sets (5 to 10) to technical failure will stimulate your muscle fibers the most.  </p>
+
+<h3>Where to start</h3>
+<p>In general, a few sets of pullups is a good place to start. You want to give yourself enough rest between sets so you can complete a quality set with good form. "More rest is better for strength building; less rest is better for muscle building," Perry says. Start off at 30-60 seconds rest between sets for muscle building, and 2-3 minutes for strength building.
+</p>
+
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+	<footer>
+			<p>&copy; 2018 Great Home Workouts. All rights reserved.</p>
+			<p id="note">This website is not intended to provide medical advice, diagnosis or prescription.</p>
+		</footer>
+	
+	<script>
+			function options1function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="block";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			
+			
+			function options2function(){
+					document.getElementById("wss").style.display="none";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="block";
+			}
+			window.onclick=function(e){
+				if (!e.target.matches('#link4_text') && !e.target.matches('#link3_text')){
+				
+					document.getElementById("wss").style.display="block";
+					document.getElementById("menu_options_1").style.display="none";
+					document.getElementById("menu_options_2").style.display="none";
+				}
+			}
+				
+				
+			
+					
+		
+		</script>
+	
+	<script>
+		var wss_i=0;
+		var wss_array=['<img src="img/sl1.jpg" alt="">','<img src="img/sl2.jpg" alt="">','<img src="img/sl3.jpg" alt="">'];
+		var wss_elem=document.getElementById("wss");
+		
+		function wssSlide(){
+			wss_elem.innerHTML=wss_array[wss_i];
+			wss_elem.style.opacity=1;
+			setTimeout('wssNext()', 3500);
+		}
+		
+		function wssNext(){
+			wss_elem.style.opacity=0;
+			wss_i++;
+			if(wss_i>(wss_array.length-1)){
+				wss_i=0;
+			}
+			setTimeout('wssSlide()',750);
+		}
+		
+		wssSlide();
+	</script>
+	</body>
+
+</html>
