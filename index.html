@@ -3,9 +3,10 @@
 <html>
 	<head>
 		<title>Great Home Workouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			*{padding:0; margin:0; font-family:calibri;}
-			#wrapper, #titlebar{min-width:65em;}
+			
 			#titlebar{
 				position:absolute;
 				width:100%;
@@ -14,7 +15,9 @@
 				z-index:1;
 				background-color:rgb(40,40,40);
 				height:4em;
+				color:white;
 			}
+			#titlebar a{color:white;}
 			#titlebar img{
 				height:4em;
 				margin-left:4em;
@@ -73,12 +76,12 @@
 				width:100%;
 				display:none;
 				z-index:4;
-				
+				overflow:hidden;
 				height:21em;
 				background-color:silver;
 			}
 			#slideshow ul{
-			padding:3em;
+			padding:1em;
 			list-style:none;
 			}
 			#slideshow li{
@@ -104,6 +107,7 @@
 			}
 			#mainbody ul{
 				margin-left:2em;
+				list-style:none;
 			}
 			footer{
 			background-color:black;
@@ -118,7 +122,58 @@
 				color:black;
 				text-decoration:none;
 			}
-			#titlebar a{color:white;}
+			#titlebar_smallsc{
+				display:none;
+				text-align:center;
+				background-color:rgb(0,162,232);
+				padding:0.4em;
+				color:white;
+				}
+				#titlebar_smallsc a{
+				color:white;
+				}
+			#sslink1,#sslink2,#sslink3,#sslink4{
+				display:inline-block;
+				border:0.12em solid white;
+				padding: 0.3em;
+				margin:0.2em;
+				font-size:1.2em;
+				width:7em;
+			}
+			#ssli3opts{
+				margin-top:1em;
+				display:none;
+				font-size:1.2em;
+			}
+			#ssli3opts li{
+				margin-top:0.4em;
+			}
+			#ssli4opts{
+				margin-top:1em;
+				display:none;
+				font-size:1.2em;
+			}
+			
+			#ssli4opts li{
+				margin-top:0.4em;
+			}
+			
+			@media screen and (max-width:959px){
+				#titlebar{display:none;}
+				#slideshow{display:none;}
+				#titlebar_smallsc{display:block;}
+				#mainbody img{float:left;}
+				#mainbody{padding:2em;}
+				
+			}
+			@media screen and (max-width:640px){
+				#titlebar{display:none;}
+				#slideshow{display:none;}
+				#titlebar_smallsc{display:block;}
+				#mainbody img{display:none;}
+				#mainbody{padding:0.5em;}
+				
+			}
 		</style>
 			
 		
@@ -128,10 +183,44 @@
 	<div id="wrapper">
 		<div id="titlebar">
 			<img src="LOGO.jpg" alt="">
+			
 			<div class="links" id="link1"><p id="link1_text">Home</p></div>
 			<div class="links" id="link2"><p id="link2_text"><a href="about.html">About</a></p></div>
 			<div class="links" id="link3" onclick="options1function()"><p id="link3_text">Workouts</p></div>
 			<div class="links" id="link4" onclick="options2function()"><p id="link4_text">Diets</p></div>
+		</div>
+		<div id="titlebar_smallsc">
+			<h1><i>Great Home Workouts</i></h1><br>
+			<div id="sslink1"><a href="index.html">Home</a></div>
+			<div id="sslink2"><a href="about.html">About</a></div>
+			<div id="sslink3" onclick="ssoptions1function()">Workouts</div>
+			<div id="sslink4" onclick="ssoptions2function()">Diets</div>
+			<br><div id="ssli3opts">
+				<ul>
+					<li><a href="workout/1.html">Chest Workouts</a></li>
+					<li><a href="workout/2.html">Back Workouts</a></li>
+					<li><a href="workout/3.html">Shoulder Workouts</a></li>
+					<li><a href="workout/4.html">Core Workouts</a></li>
+					<li><a href="workout/5.html">Biceps Workouts</a></li>
+					<li><a href="workout/6.html">Triceps Workouts</a></li>
+					<li><a href="workout/7.html">Leg Workouts</a></li>
+					<li><a href="workout/8.html">Flexibility Workouts</a></li>
+					<li><a href="workout/9.html">Explosive Strength Workouts</a></li>
+				</ul>
+			</div>
+			<br><div id="ssli4opts">
+				<ul>
+					<li><a href="diet/1.html">Diet Plans</a></li>
+					<li><a href="diet/2.html">Meal Prep</a></li>
+					<li><a href="diet/3.html">Supplementation</a></li>
+					<li><a href="diet/4.html">Home made protien bars</a></li>
+					<li><a href="diet/5.html">Best Pre and Post Workout foods</a></li>
+					<li><a href="diet/6.html">Calculators</a></li>
+					<li><a href="diet/7.html">Diet tips for women</a></li>
+					<li><a href="diet/8.html">Diet tips for men</a></li>
+					<li><a href="diet/9.html">Diet tips for seniors</a></li>
+				</ul>
+			</div>
 		</div>
 		
 		<div id="slideshow">
@@ -180,7 +269,7 @@
 			
 			<h1>Why you should exercise more often</h1><br>
 			<p>You keep your skin clean. You condition your hair. You're eating right. You're doing all you can to look and feel great. But are you missing out on an important part of a healthier lifestyle?</p>
-<img src="img/ex_ben_1.jpg" alt="">
+<img src="img/ex_ben_1.jpg" alt="" width="20%">
 <p>No matter what your age or shape, you should exercise daily. Not only does exercise tone your body so you can wear your favorite jeans, it strengthens your muscles, keeps your bones strong, and improves your skin. And there are more benefits of exercise -- increased relaxation, better sleep and mood, strong immune function, and more. Let's look at some of the incredible benefits of exercise then talk about how you can get started.</p>
 
 <p>Exercise and Your Weight
@@ -250,9 +339,20 @@ If you stay with the walking program, you'll see benefits with:</p>
 					document.getElementById("menu_options_1").style.display="none";
 					document.getElementById("menu_options_2").style.display="none";
 				}
+				if (!e.target.matches('#sslink3') && !e.target.matches('#sslink4')){
+					document.getElementById("ssli3opts").style.display="none";
+					document.getElementById("ssli4opts").style.display="none";
+				}
 			}
 				
-				
+			function ssoptions1function(){
+				document.getElementById("ssli3opts").style.display="block";
+				document.getElementById("ssli4opts").style.display="none";
+			}
+			function ssoptions2function(){
+				document.getElementById("ssli4opts").style.display="block";
+				document.getElementById("ssli3opts").style.display="none";
+			}	
 			
 					
 		
