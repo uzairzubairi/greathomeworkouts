@@ -170,8 +170,8 @@
 				#titlebar{display:none;}
 				#slideshow{display:none;}
 				#titlebar_smallsc{display:block;}
-				#mainbody img{display:none;}
-				#mainbody{padding:0.5em;}
+				#mainbody img{min-width:40%;}
+				#mainbody{padding:0.5em; padding-top:2em;}
 				
 			}
 		</style>
@@ -184,15 +184,15 @@
 		<div id="titlebar">
 			<img src="LOGO.jpg" alt="">
 			
-			<div class="links" id="link1"><p id="link1_text">Home</p></div>
-			<div class="links" id="link2"><p id="link2_text"><a href="about.html">About</a></p></div>
+			<div class="links" id="link1"><p id="link1_text"><a href="../index.html">Home</a></p></div>
+			<div class="links" id="link2"><p id="link2_text"><a href="../about.html">About</a></p></div>
 			<div class="links" id="link3" onclick="options1function()"><p id="link3_text">Workouts</p></div>
 			<div class="links" id="link4" onclick="options2function()"><p id="link4_text">Diets</p></div>
 		</div>
 		<div id="titlebar_smallsc">
 			<h1><i>Great Home Workouts</i></h1><br>
-			<div id="sslink1"><a href="index.html">Home</a></div>
-			<div id="sslink2"><a href="about.html">About</a></div>
+			<div id="sslink1"><a href="../index.html">Home</a></div>
+			<div id="sslink2"><a href="../about.html">About</a></div>
 			<div id="sslink3" onclick="ssoptions1function()">Workouts</div>
 			<div id="sslink4" onclick="ssoptions2function()">Diets</div>
 			<br><div id="ssli3opts">
